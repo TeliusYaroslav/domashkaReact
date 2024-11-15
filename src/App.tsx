@@ -1,26 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export function ComponentApp(){
+    return (
+        <div>
+            <h1>Pelmeni</h1>
+            <p>Пельмени — это традиционное блюдо, представляющее собой сочный фарш, завернутый в тонкое тесто. Они варятся до нежной текстуры, сохраняя насыщенный вкус начинки. Идеальны с маслом, сметаной или бульоном. Универсальное угощение для любого случая: от уютного домашнего ужина до праздничного застолья. Простые, сытные, любимые всеми!</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIc0Mm7psAHC3dFtNwoHG6TOh6STYKsO5gYg&s" alt="" />
+        </div>
+    )
 }
-
-export default App;
