@@ -1,6 +1,6 @@
-import {PostList} from './PostList'
-import { Post } from "./Post"
-import { Layout } from "./Layout"
+import {PostList} from '../Postandanother/PostList'
+import { Post } from "../Postandanother/Post"
+import { Layout } from "../Layouts/Layout"
 import "./main.css"
 
 export function AppPosts() {
