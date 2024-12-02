@@ -2,9 +2,9 @@ import {Post} from './Post'
 
 interface PostData {
   id: number
+  imageUrl: string
   title: string
   description: string
-  imageUrl: string
   author: string
 }
 
@@ -18,9 +18,9 @@ export function PostList(props: PostListProps) {
       {props.posts.map((post) => (
         <Post
           key={post.id}
+          imageUrl={post.imageUrl}
           title={post.title}
           description={post.description}
-          imageUrl={post.imageUrl}
           author={post.author}
         />
       ))}

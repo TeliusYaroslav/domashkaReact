@@ -20,15 +20,15 @@ interface PostProps {
 
 
     return (
-      <div>
+      <div className="card">
         <h1>{props.title}</h1>
-        <p>{props.description}</p>
-        <img src={props.imageUrl}/>
-        <p>Автор: {props.author}</p>
         
-
+        <img src={props.imageUrl}/>
+        <p>{props.description}</p>
+        <p>Автор: {props.author}</p>
         <p>Лайки: {likes}</p>
         <button onClick={checkLike} disabled={isLiked}>
+
           {(() => {
             if (isLiked) {
               return "Лайк поставлен"
