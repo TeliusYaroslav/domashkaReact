@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { Layout } from "../Layouts/Layout"
-import { PostList } from "../Postandanother/PostList"
-import { PostPage } from "../Postandanother/Postpage"
-import { NotFound } from "../Postandanother/NotFound"
+import { Layout } from "../../../shared/Layouts/Layout"
+import { PostList } from "../../PostListPage/PostList"
+import { PostPage } from "../../PostPage/Postpage"
+import { NotFound } from "../../../shared/Postandanother/NotFound"
 import "./main.css"
 
 

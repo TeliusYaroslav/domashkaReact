@@ -12,5 +12,5 @@ export function Layout() {
       </header>
       <main><Outlet /></main>
     </div>
-  );
+  )
 }
