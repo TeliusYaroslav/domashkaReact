@@ -1,10 +1,14 @@
 import { useParams } from "react-router-dom"
 import { usePostById } from "../../hooks/usePostById"
+import { useLikedPosts } from "../MainPage/APPP/App"
 
 export function PostPage() {
   const params = useParams<{ id: string }>()
   const id = params && params.id ? params.id : ""
   const { post, loading, error } = usePostById(id)
+
+  const { likedPosts, switchLike } = useLikedPosts()
+  const isLiked = id && likedPosts.includes(Number(id))
 
   if (loading) {
     return <div>Загрузка...</div>
@@ -28,6 +32,9 @@ export function PostPage() {
         className="post-body"
         dangerouslySetInnerHTML={{ __html: post.body_markdown }}
       ></div>
+      <button onClick={() => switchLike(Number(id))}>
+        {isLiked ? "Убрать из любимых" : "Добавить в любимые"}
+      </button>
     </div>
   )
 }
