@@ -1,4 +1,5 @@
-import { useLikedPosts } from "../../../pages/MainPage/APPP/App"
+import { useLikedPosts } from "../../../pages/APPP/App"
+
 
 
 interface PostProps {

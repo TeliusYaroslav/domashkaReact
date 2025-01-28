@@ -1,0 +1,70 @@
+body {
+    background: url('https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif?cid=ecf05e47tft59lac488q4b9b2kbrtzuk9a3u1e0ghs2rct9o&ep=v1_gifs_search&rid=giphy.gif&ct=g') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .post-page {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .post-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); 
+    z-index: -1;
+  }
+  
+  .post-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .post-body {
+    margin: 20px 0;
+  }
+  
+  .post-page button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background: rgba(146, 146, 245, 0.8);
+    border: 2px solid rgba(146, 146, 245, 1);
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .post-page button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .post-page button span {
+    text-align: center;
+  }
+  
+  .post-page button:hover {
+    background-color: rgba(112, 112, 219, 0.8);
+    transform: scale(1.05);
+  }
+  
+  .post-page button:active {
+    background-color: rgba(90, 90, 199, 0.8);
+    transform: scale(0.95);
+  }

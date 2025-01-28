@@ -7,8 +7,8 @@ export function Layout() {
     <div className="Layout">
       <header className="header">
         <div className="logo">POSTSITENews</div>
-            <button><Link to="/">Главная</Link></button>
-            <button><Link to="/posts">Посты</Link></button>
+            <button className="mainbutton"><Link to="/">Главная</Link></button>
+            <button className="postbutton"><Link to="/posts">Посты</Link></button>
       </header>
       <main><Outlet /></main>
     </div>

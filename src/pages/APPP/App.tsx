@@ -1,10 +1,11 @@
 import { createContext, useState, useContext } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { Layout } from "../../../shared/Layouts/Layout"
-import { PostList } from "../../PostListPage/PostList"
-import { NotFound } from "../../../shared/Postandanother/NotFound"
 import "./main.css"
-import { PostPage } from "../../PostPage/Postpage"
+import { Layout } from "../../shared/Layouts/Layout"
+import { PostList } from "../PostListPage/PostList"
+import { NotFound } from "../../shared/Postandanother/NotFound"
+import { PostPage } from "../PostPage/Postpage"
+
 
 const LikedPostsContext = createContext({likedPosts: [] as number[],switchLike: (id: number) => {},})
 

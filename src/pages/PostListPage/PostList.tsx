@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { usePosts } from "../../hooks/usePosts"
-
+import "./PostList.css"
 
 export function PostList() {
   const { posts, loading, error } = usePosts()

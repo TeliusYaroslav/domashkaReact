@@ -7,16 +7,59 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background: #f88888;
+  justify-content:space-around;
+  padding: 10px 15px ;
+  background: linear-gradient(90deg, #f88888, #f06060);
   color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.header-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #ffcccc;
+}
+
+button {
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #9292f5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #7070db;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #5a5ac7;
+  transform: scale(0.95);
+}
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -74,10 +117,4 @@
 .card p {
   font-size: 0.9rem;
   color: #555;
-}
-button{
-  width : 100px;
-  height: 50px;
-  border-radius: 16px;
-  background-color: rgb(146, 146, 245);
 }
