@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom"
 import { usePostById } from "../../hooks/usePostById"
-import { useLikedPosts } from "../APPP/App"
+
 import "./PostPage.css"
+import { useLikedPosts } from "../../context/LikedPostsContext"
 
 export function PostPage() {
   const params = useParams<{ id: string }>()

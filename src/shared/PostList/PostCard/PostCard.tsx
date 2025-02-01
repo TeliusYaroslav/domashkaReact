@@ -1,6 +1,4 @@
-import { useLikedPosts } from "../../../pages/APPP/App"
-
-
+import { useLikedPosts } from "../../../context/LikedPostsContext"
 
 interface PostProps {
   id: number

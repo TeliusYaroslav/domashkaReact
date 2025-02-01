@@ -9,6 +9,7 @@ export function Layout() {
         <div className="logo">POSTSITENews</div>
             <button className="mainbutton"><Link to="/">Главная</Link></button>
             <button className="postbutton"><Link to="/posts">Посты</Link></button>
+            <button className="liked"><Link to="/liked">Избранные</Link></button>
       </header>
       <main><Outlet /></main>
     </div>
