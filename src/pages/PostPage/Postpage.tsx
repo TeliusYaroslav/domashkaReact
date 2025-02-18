@@ -26,14 +26,13 @@ export function PostPage() {
 
   return (
     <div className="post-page">
-      <h1>{post.title}</h1>
-      {post.cover_image && (
-        <img src={post.cover_image} alt={post.title} className="post-image" />
-      )}
+      <h1>{post.name}</h1>
+      <h1>{post.description}</h1>
       <div
         className="post-body"
         dangerouslySetInnerHTML={{ __html: post.body_markdown }}
       ></div>
+      <h1>Author: {post.author}</h1>
       <button onClick={() => switchLike(Number(id))}>
         {isLiked ? "Убрать из любимых" : "Добавить в любимые"}
       </button>
