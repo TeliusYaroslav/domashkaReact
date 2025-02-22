@@ -4,6 +4,8 @@ import { LikedPostsPage } from "../pages/LikedPostsPage/LikedPostsPage"
 import { PostList } from "../pages/PostListPage/PostList"
 import { PostPage } from "../pages/PostPage/Postpage"
 import { NotFound } from "../shared/Postandanother/NotFound"
+import { RegistrationPage } from "../pages/RegistrationPage/RegistrationPage"
+import { LoginPage } from "../pages/LoginPage/LoginPage"
 
 export function AppRoutes() {
   
@@ -16,6 +18,8 @@ export function AppRoutes() {
             <Route path="post/:id" element={<PostPage/>}/>
             <Route path="*" element={<NotFound/>}/>
             <Route path="liked" element={<LikedPostsPage/>}/> 
+            <Route path="registration" element={<RegistrationPage/>}/>
+            <Route path="login" element={<LoginPage/>}/>
           </Route>
         </Routes> 
       
