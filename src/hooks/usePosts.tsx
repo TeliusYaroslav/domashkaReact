@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 
+// Переделать типизацию на то, что приходит с твоей API
 interface PostData {
   id: number;
   title: string;

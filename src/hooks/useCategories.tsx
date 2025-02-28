@@ -17,7 +17,9 @@ export function useCategories() {
         if (!response.ok) {
           throw new Error(`Ошибка: ${response.status}`)
         }
-        const data = await response.json()
+        // указать типизацию можно напрямую для data
+        const data: CategoryData[] = await response.json()
+        // any не делаем
         const formattedCategories = data.map((category: any) => ({
           id: category.id,
           name: category.name || "Без названия", 

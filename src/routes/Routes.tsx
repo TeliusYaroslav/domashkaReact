@@ -10,9 +10,10 @@ import { LoginPage } from "../pages/LoginPage/LoginPage"
 export function AppRoutes() {
   
   return (
-      
+    // 4 табуляции, хотя везде 2
         <Routes>
           <Route path="/" element={<Layout/>}>
+          {/* Вынести в HomePage */}
             <Route index element={<h1 className="homepage-title">Сайт объявлений</h1>}/>
             <Route path="posts" element={<PostList/>}/>
             <Route path="post/:id" element={<PostPage/>}/>

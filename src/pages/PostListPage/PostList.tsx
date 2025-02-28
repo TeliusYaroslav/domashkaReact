@@ -4,7 +4,7 @@ import "./PostList.css"
 
 export function PostList() {
   const { posts, loading, error } = usePosts()
-
+//   Хороший способ, гуд
   if (loading) {
     return <div>Загрузка...</div>
   }

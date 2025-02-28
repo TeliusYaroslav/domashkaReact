@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import "./LoginPage.css"
+// ILoginForm
 interface IForm {
 	email: string;
 	password: string;
@@ -42,6 +43,7 @@ export function LoginPage() {
 							maxLength: {value: 50, message: "Length should be < 50"},
 						})}
 					/>
+                    {/* вынести из label */}
                 <p>{formState.errors.password?.message}</p>
 				</label>
 

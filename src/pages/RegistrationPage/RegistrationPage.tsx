@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import "./RegistrationPage.css"
+// тут лучше отделить строкой импорт и интерфейс
 interface IFormRegister {
     username:string;
     email: string;
@@ -43,6 +44,7 @@ export function RegistrationPage() {
                             minLength: {value: 7, message: "Length should be > 7"},
                             maxLength: {value: 50, message: "Length should be < 50"},
                         })}
+                        // так себе работает
                         onFocus={() => {clearErrors("email")}}
                     />
                 <p>{formState.errors.email?.message}</p>

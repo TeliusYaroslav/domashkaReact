@@ -5,11 +5,13 @@ import "./PostPage.css"
 import { useLikedPosts } from "../../context/LikedPostsContext"
 
 export function PostPage() {
+    // id: number
   const params = useParams<{ id: string }>()
   const id = params && params.id ? params.id : ""
   const { post, loading, error } = usePostById(id)
 
   const { likedPosts, switchLike } = useLikedPosts()
+    // Вот это лучше добавить функцией в контекст, чтобы не дергать likedPosts 
   const isLiked = id && likedPosts.includes(Number(id))
 
   if (loading) {

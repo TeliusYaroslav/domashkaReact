@@ -11,6 +11,7 @@ export const useLikedPosts = () => useContext(LikedPostsContext)
 export function LikedPostsProvider({children}:{children:ReactNode}) {
   const [likedPosts, setLikedPosts] = useState<number[]>([])
   const switchLike = (id:number) => {
+    // очень тяжелый код, старайся такой не делать
     setLikedPosts(lukas =>lukas.includes(id) ? lukas.filter(postId => postId !== id) : [...lukas, id])
   }
 

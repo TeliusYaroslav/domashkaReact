@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 
+// Переделать типизацию на то, что приходит с твоей API
 interface Post {
   author: string
   description: string;
@@ -14,6 +15,7 @@ export function usePostById(id: string) {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    // здесь лучше сделать if (!id) return
     async function fetchPost() {
       try {
         setLoading(true)
@@ -29,7 +31,8 @@ export function usePostById(id: string) {
         setLoading(false)
       }
     }
-
+    // Стильнее сделать инвертированный if
+    // и перенести его до объявления функции
     if (id) {
       fetchPost()
     }
