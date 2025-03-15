@@ -6,6 +6,7 @@ import { PostPage } from "../pages/PostPage/Postpage"
 import { NotFound } from "../shared/Postandanother/NotFound"
 import { RegistrationPage } from "../pages/RegistrationPage/RegistrationPage"
 import { LoginPage } from "../pages/LoginPage/LoginPage"
+import { ProfilePage } from "../pages/ProfilePage/profilPage"
 
 export function AppRoutes() {
   
@@ -20,6 +21,7 @@ export function AppRoutes() {
             <Route path="liked" element={<LikedPostsPage/>}/> 
             <Route path="registration" element={<RegistrationPage/>}/>
             <Route path="login" element={<LoginPage/>}/>
+            <Route path="profile" element={<ProfilePage/>}/>
           </Route>
         </Routes> 
       
